@@ -1,0 +1,1 @@
+﻿Get-ADComputer -filter "OperatingSystem -like '*server*' " -Properties Name, OperatingSystem, LastLogonDate | Select-object -property Name, OperatingSystem, lastlogondate | OGV

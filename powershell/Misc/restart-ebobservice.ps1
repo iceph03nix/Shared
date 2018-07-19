@@ -1,0 +1,1 @@
+﻿Get-WmiObject -ComputerName ebob -Class win32_service | Where-Object Name -like "eBobEngineService" | Restart-Service
